@@ -1,0 +1,8 @@
+project: savantenvs/libiio
+target: fuzz_ip_client
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ip_client/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_ip_client
+    libfuzzer: true

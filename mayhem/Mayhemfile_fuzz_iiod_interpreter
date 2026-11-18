@@ -1,0 +1,8 @@
+project: savantenvs/libiio
+target: fuzz_iiod_interpreter
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_iiod_interpreter/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_iiod_interpreter
+    libfuzzer: true

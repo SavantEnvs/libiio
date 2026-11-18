@@ -1,0 +1,8 @@
+project: savantenvs/libiio
+target: fuzz_tinyiiod
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_tinyiiod/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_tinyiiod
+    libfuzzer: true

@@ -1,0 +1,8 @@
+project: savantenvs/libiio
+target: fuzz_xml_context
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_xml_context/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_xml_context
+    libfuzzer: true

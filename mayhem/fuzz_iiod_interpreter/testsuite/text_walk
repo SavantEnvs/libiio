@@ -1,0 +1,14 @@
+VERSION
+PRINT
+ZPRINT
+TIMEOUT 500
+READ ad9361-phy
+READ ad9361-phy DEBUG
+READ ad9361-phy BUFFER
+READ ad9361-phy ensm_mode
+READ ad9361-phy INPUT voltage0
+READ ad9361-phy INPUT voltage0 hardwaregain
+READ ad9361-phy OUTPUT altvoltage0 frequency
+GETTRIG ad9361-phy
+SETTRIG ad9361-phy
+EXIT

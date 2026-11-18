@@ -1,0 +1,6 @@
+WRITE ad9361-phy ensm_mode 5
+alert
+WRITE ad9361-phy OUTPUT altvoltage0 frequency 9
+2400000000
+READ ad9361-phy ensm_mode
+SET ad9361-phy BUFFERS_COUNT 8

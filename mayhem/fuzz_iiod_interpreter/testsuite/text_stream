@@ -1,0 +1,6 @@
+OPEN cf-ad9361-lpc 64 00000003
+READBUF cf-ad9361-lpc 256
+CLOSE cf-ad9361-lpc
+OPEN cf-ad9361-dds-core-lpc 32 0000000f CYCLIC
+WRITEBUF cf-ad9361-dds-core-lpc 16
+0123456789abcdef
